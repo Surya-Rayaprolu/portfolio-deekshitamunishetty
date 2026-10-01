@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export const NeveraShowcase: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'overview' | 'livechat' | 'socialwidgets' | 'ads'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'livechat' | 'socialwidgets'>('overview');
   const [deviceView, setDeviceView] = useState<'desktop' | 'mobile'>('desktop');
   const [chatInput, setChatInput] = useState('');
   const [chatMessages, setChatMessages] = useState<Array<{ sender: 'bot' | 'user'; text: string; time: string }>>([
@@ -48,7 +48,7 @@ export const NeveraShowcase: React.FC = () => {
               nevara.top — WordPress Architecture & Live Widgets
             </h2>
             <p className="mt-3 text-base sm:text-lg text-[#14151B]/85 leading-relaxed">
-              Designed, customized, and published by Deekshita on WordPress. Features real-time social media widgets, live customer chat engagement, responsive mobile UI, and paid Google & Meta ad funnels.
+              Designed, customized, and published by Deekshita on WordPress. Features real-time social media widgets, live customer chat engagement, and responsive mobile-first UI architecture.
             </p>
           </div>
 
@@ -94,16 +94,6 @@ export const NeveraShowcase: React.FC = () => {
             }`}
           >
             Live Social Widgets & Feeds
-          </button>
-          <button
-            onClick={() => setActiveTab('ads')}
-            className={`px-4 py-2.5 rounded-xl border-2 text-xs sm:text-sm font-bold uppercase tracking-wider transition-all cursor-pointer ${
-              activeTab === 'ads'
-                ? 'bg-[#2D4BFF] text-white border-[#14151B] shadow-pop'
-                : 'bg-white text-[#14151B] border-[#14151B] hover:bg-slate-100 shadow-xs'
-            }`}
-          >
-            Google & Meta Ads Strategy
           </button>
         </div>
 
@@ -247,9 +237,9 @@ export const NeveraShowcase: React.FC = () => {
                 <div className="text-xs text-slate-600 mt-1">Live embed widgets</div>
               </div>
               <div className="p-4 rounded-xl border border-slate-200 bg-[#FAF9F6]">
-                <div className="text-xs font-bold text-slate-500 uppercase">Traffic Strategy</div>
-                <div className="text-sm font-extrabold text-[#14151B] mt-0.5">Google & Meta Ads</div>
-                <div className="text-xs text-slate-600 mt-1">Search intent + paid social</div>
+                <div className="text-xs font-bold text-slate-500 uppercase">Mobile Optimization</div>
+                <div className="text-sm font-extrabold text-[#14151B] mt-0.5">100% Responsive</div>
+                <div className="text-xs text-slate-600 mt-1">Cross-device fluidity & speed</div>
               </div>
             </div>
           </div>
@@ -450,108 +440,10 @@ export const NeveraShowcase: React.FC = () => {
                     <span>📸 Instagram Channel Sync</span>
                     <span className="text-purple-600">Active</span>
                   </div>
-                  <div className="p-2.5 bg-white border border-[#14151B] rounded-lg flex items-center justify-between text-xs font-bold text-[#14151B]">
-                    <span>💼 LinkedIn Profile Connect</span>
-                    <span className="text-blue-600">Active</span>
-                  </div>
                 </div>
                 <p className="text-xs text-[#14151B]/80 font-medium">
                   Allows visitors to connect through their preferred platform with 1 tap.
                 </p>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* Tab 4: Google & Meta Ads Strategy */}
-        {activeTab === 'ads' && (
-          <div className="bg-white border-2 border-[#14151B] rounded-2xl p-6 sm:p-8 shadow-pop-lg space-y-6">
-            <div className="border-b-2 border-[#14151B]/15 pb-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-[#2D4BFF]">
-                  Paid Traffic & Acquisition Coursework
-                </span>
-                <h3 className="text-2xl font-bold font-display text-[#14151B]">
-                  Google Ads & Meta Ads Performance Stack
-                </h3>
-              </div>
-              <div className="text-xs font-mono font-semibold text-slate-600 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-300">
-                Active Training & Execution Framework
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {/* Google Ads Mockup */}
-              <div className="p-6 bg-[#FAF9F6] border-2 border-[#14151B] rounded-2xl shadow-pop space-y-3">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold text-slate-500 uppercase flex items-center gap-1.5">
-                    <span className="font-bold text-black bg-slate-200 px-1.5 py-0.5 rounded text-[10px]">Ad</span>
-                    <span>Google Search Intent</span>
-                  </span>
-                  <span className="text-xs font-mono text-[#2D4BFF] font-bold">Google Ads</span>
-                </div>
-
-                <div className="space-y-1">
-                  <div className="text-xs font-mono text-slate-600">
-                    https://nevara.top/web-design
-                  </div>
-                  <h4 className="text-base sm:text-lg font-bold text-[#1a0dab] hover:underline cursor-pointer">
-                    Custom Web Design & Brand Copy | Live on nevara.top
-                  </h4>
-                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
-                    Fast, responsive WordPress sites with integrated live chat and dynamic social widgets. Clean code, sharp copywriting, and zero bloat. Book your consultation today.
-                  </p>
-                </div>
-
-                <div className="pt-3 border-t border-slate-200 flex flex-wrap gap-2 text-xs text-[#1a0dab] font-semibold">
-                  <span className="hover:underline cursor-pointer">Live Chat Integration</span>
-                  <span>·</span>
-                  <span className="hover:underline cursor-pointer">Social Widgets</span>
-                  <span>·</span>
-                  <span className="hover:underline cursor-pointer">WordPress CMS</span>
-                </div>
-              </div>
-
-              {/* Meta Ads (Instagram Feed) Mockup */}
-              <div className="p-6 bg-[#FAF9F6] border-2 border-[#14151B] rounded-2xl shadow-pop space-y-3">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold text-slate-500 uppercase flex items-center gap-1.5">
-                    <span className="font-bold text-purple-700 bg-purple-100 px-1.5 py-0.5 rounded text-[10px]">Sponsored</span>
-                    <span>Meta Ads (Instagram)</span>
-                  </span>
-                  <span className="text-xs font-mono text-[#7C3AED] font-bold">Meta Ads Manager</span>
-                </div>
-
-                <div className="p-4 bg-white border-2 border-[#14151B] rounded-xl space-y-3 shadow-xs">
-                  <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full bg-[#7C3AED] text-white flex items-center justify-center text-xs font-bold">
-                      N
-                    </div>
-                    <div>
-                      <div className="text-xs font-bold text-[#14151B]">nevara.top</div>
-                      <div className="text-[10px] text-slate-400">Sponsored</div>
-                    </div>
-                  </div>
-
-                  <p className="text-xs sm:text-sm text-[#14151B] font-medium leading-relaxed">
-                    Most websites look pretty but leave visitors in the dark. At nevara.top, we combine custom WordPress architecture with live customer chat and dynamic social feeds that convert traffic immediately.
-                  </p>
-
-                  <div className="p-3 bg-[#F5F3FF] border border-[#DDD6FE] rounded-lg flex items-center justify-between">
-                    <div>
-                      <div className="text-[10px] uppercase font-bold text-slate-500">nevara.top</div>
-                      <div className="text-xs font-bold text-[#7C3AED]">Custom Web Design & Integrations</div>
-                    </div>
-                    <a
-                      href="https://nevara.top"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3 py-1.5 text-xs font-bold text-white bg-[#7C3AED] rounded-md shadow-xs hover:bg-[#6D28D9]"
-                    >
-                      Learn More ↗
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

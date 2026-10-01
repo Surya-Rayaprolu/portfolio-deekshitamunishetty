@@ -477,48 +477,6 @@ export const PORTFOLIO_DATA = {
         'Cross-Team Exception Resolution Logs'
       ],
       tags: ['Data Integrity', 'Executive Reporting', 'Regulatory Compliance', 'Process Discipline']
-    },
-    {
-      id: 'nevara-top',
-      title: 'nevara.top — Custom Web Design & Live Integrations',
-      brand: 'nevara.top',
-      clientSubtitle: 'WordPress Web Design, Live Chat & Social Widgets',
-      category: 'webdesign',
-      categoryLabel: 'Web Design & WordPress',
-      timeline: 'Live Deployment',
-      location: 'Live on nevara.top',
-      role: 'Web Designer & Developer',
-      themeColor: '#7C3AED',
-      accentBg: '#F5F3FF',
-      borderColor: '#DDD6FE',
-      tagline: 'Custom WordPress website architecture featuring real-time social widgets, interactive live chat, and responsive mobile UX.',
-      keyMetric: 'nevara.top',
-      keyMetricLabel: 'Live production website deployed',
-      liveUrl: 'https://nevara.top',
-      summary: 'Designed, customized, and deployed nevara.top using WordPress. Integrated real-time social media widgets, live customer chat functionality, and mobile-first responsive architecture to deliver an interactive web experience.',
-      challenge: 'A modern online presence requires more than static brochures: visitors expect immediate engagement via live chat, social proof through live feeds, and seamless navigation across mobile and desktop without speed drops.',
-      solution: 'Engineered a clean WordPress layout, embedded live social feeds for dynamic community updates, integrated automated live chat for direct visitor interaction, and optimized page speed and UI aesthetics.',
-      bullets: [
-        'Designed and published nevara.top using WordPress with clean visual hierarchy and responsive mobile layouts.',
-        'Configured and embedded live social media widgets to display real-time community activity and social proof.',
-        'Integrated live chat functionality for instant visitor communication, automated welcome triggers, and lead capture.',
-        'Currently expanding stack into Google Ads (Search & Display) and Meta Ads (Instagram/Facebook Ads Manager) for full-funnel acquisition.'
-      ],
-      transformation: {
-        beforeLabel: 'Static Brochure Website',
-        beforeText: 'Static text pages with no live visitor engagement, broken social links, and unoptimized mobile layouts.',
-        afterLabel: 'The nevara.top Architecture',
-        afterText: 'Dynamic, interactive WordPress web experience equipped with live chat, real-time social feeds, and mobile-first responsiveness.',
-        insight: 'Pairing conversion copywriting with hands-on WordPress web design and live widgets gives 100% full-funnel control from traffic to conversion.'
-      },
-      deliverables: [
-        'Custom WordPress Theme Architecture',
-        'Live Chat Widget Integration',
-        'Real-Time Social Media Feeds',
-        'Mobile-Responsive UX Layout',
-        'Google & Meta Ads Campaign Strategy'
-      ],
-      tags: ['WordPress', 'nevara.top', 'Live Chat', 'Social Widgets', 'Google Ads', 'Meta Ads']
     }
   ] as CaseStudy[],
 

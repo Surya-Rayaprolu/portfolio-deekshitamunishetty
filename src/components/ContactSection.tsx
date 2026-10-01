@@ -24,10 +24,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume }) 
     setInquiryType(type);
     if (type === 'Full-Time Role') {
       setMessage(`Hi Deekshita, we came across your portfolio and love your blend of creative copy and financial discipline. We have a Content/Marketing Writer role on our team and would love to chat!`);
-    } else if (type === 'Contract / Freelance') {
-      setMessage(`Hi Deekshita, we are preparing an upcoming product launch/campaign and need high-converting landing page copy and consumer messaging. Can you share your timeline and availability?`);
     } else {
-      setMessage(`Hi Deekshita, impressed by your work on FloBites and MyCaptain. Would love to connect for 15 minutes to talk brand strategy and copy.`);
+      setMessage(`Hi Deekshita, we are preparing an upcoming product launch/campaign and need high-converting landing page copy and consumer messaging. Can you share your timeline and availability?`);
     }
   };
 
@@ -186,8 +184,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume }) 
                   <label className="block text-xs font-bold uppercase tracking-wider text-[#14151B]/70 mb-2">
                     What are you looking to collaborate on?
                   </label>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                    {['Full-Time Role', 'Contract / Freelance', 'Brand Consultation'].map((type) => (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    {['Full-Time Role', 'Contract / Freelance'].map((type) => (
                       <button
                         type="button"
                         key={type}

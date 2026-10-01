@@ -53,16 +53,6 @@ export const CaseStudies: React.FC<CaseStudiesProps> = ({ onSelectStudy }) => {
               FloBites FMCG
             </button>
             <button
-              onClick={() => setActiveFilter('webdesign')}
-              className={`px-3.5 py-1.5 text-xs font-bold rounded-lg transition-colors cursor-pointer whitespace-nowrap ${
-                activeFilter === 'webdesign'
-                  ? 'bg-[#7C3AED] text-white'
-                  : 'text-[#14151B]/70 hover:text-[#14151B] hover:bg-slate-100'
-              }`}
-            >
-              WordPress (nevara.top)
-            </button>
-            <button
               onClick={() => setActiveFilter('edtech')}
               className={`px-3.5 py-1.5 text-xs font-bold rounded-lg transition-colors cursor-pointer whitespace-nowrap ${
                 activeFilter === 'edtech'
