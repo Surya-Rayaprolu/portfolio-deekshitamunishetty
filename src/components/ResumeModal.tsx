@@ -130,7 +130,7 @@ Languages: English (fluent) · Hindi (fluent) · Telugu (native)`;
               P R O F I L E
             </h2>
             <p className="text-sm sm:text-base leading-relaxed text-[#14151B]/90 font-normal">
-              Marketing and content writer with a finance and operations background. Currently writing website copy, running category research, and supporting PR for FloBites, a period-week snack brand in a near-empty Indian category. I started in marketing: fundraising copy at Street Cause, and Instagram and WhatsApp campaigns at MyCaptain that converted 200+ students, past intern target. Two years at Wells Fargo and D.E. Shaw followed, in reconciliation and stakeholder reporting, where accuracy was not negotiable and the deadline never moved. The move back to marketing is deliberate. What I bring that most early-career writers do not is the discipline to do creative work inside real constraints.
+              Marketing and content writer with a finance and operations background. Authored commercial packaging copy, 43 taglines, 15 video ad storyboards, and 25-brand category research for FloBites (The Hormone Essentials), India’s first period-week snack brand. I started in marketing: fundraising copy at Street Cause, and Instagram and WhatsApp campaigns at MyCaptain that converted 200+ students, past intern target. Two years at Wells Fargo and D.E. Shaw followed, in reconciliation and stakeholder reporting, where accuracy was not negotiable and the deadline never moved. The move to marketing is deliberate. What I bring that most early-career writers do not is the discipline to do creative work inside real constraints.
             </p>
           </div>
 
@@ -143,16 +143,17 @@ Languages: English (fluent) · Hindi (fluent) · Telugu (native)`;
             {/* FloBites */}
             <div className="space-y-1.5">
               <div className="flex flex-wrap items-center justify-between text-sm">
-                <span className="font-bold text-[#14151B]">Marketing Intern</span>
-                <span className="font-mono text-xs text-[#14151B]/70">Jun 2026 - Present</span>
+                <span className="font-bold text-[#14151B]">Marketing &amp; Content Specialist</span>
+                <span className="font-mono text-xs text-[#14151B]/70">The Hormone Essentials (FloBites)</span>
               </div>
               <div className="text-xs italic text-[#14151B]/80 font-medium">
-                The Hormone Essentials (FloBites) · Women’s Wellness · Remote
+                Women’s Wellness FMCG · Remote
               </div>
               <ul className="list-disc list-outside pl-4 space-y-1 text-xs sm:text-sm text-[#14151B]/90">
-                <li>Write and refine website copy for a period-week snack brand, turning clinical ingredient benefits into warm, accessible language for a women-first audience.</li>
-                <li>Run consumer and category research: mapping the women’s wellness snack space, identifying competitor gaps, and surfacing perception insights.</li>
-                <li>Support PR and brand communications in a category with almost no established Indian competition.</li>
+                <li>Authored website copy and product packaging for Craving Cruncher (55% Dark Chocolate) and Mood Muncher (Jaggery Classic) bars.</li>
+                <li>Created 43 brand taglines and 15 video ad film storyboards exploring real-world menstrual experiences.</li>
+                <li>Penned the 12-page educational guide &quot;FloGirl’s Guide to Periods&quot;, featuring the 7.26L lifetime blood loss calculation.</li>
+                <li>Executed comprehensive 25-brand category research mapping competitor pricing, pack sizes, keywords, and whitespace across quick commerce.</li>
               </ul>
             </div>
 
@@ -244,13 +245,16 @@ Languages: English (fluent) · Hindi (fluent) · Telugu (native)`;
             </h2>
             <div className="space-y-1 text-xs sm:text-sm">
               <div>
-                <strong>Content & Copy:</strong> Website and landing page copy · Explainers · Email sequences · Social copy · Brand voice
+                <strong>Content &amp; Copy:</strong> Website and landing page copy · Product copies (FloBites) · Explainers · Email sequences · Social copy · Brand voice
+              </div>
+              <div>
+                <strong>Web Design &amp; Paid Ads:</strong> WordPress Web Design (built nevara.top) · Live Chat Integration · Live Social Widgets · Google Ads · Meta Ads
               </div>
               <div>
                 <strong>Marketing:</strong> Consumer and competitor research · Brand positioning · Segmentation · PR outreach
               </div>
               <div>
-                <strong>Finance & Ops:</strong> Reconciliation · Stakeholder and MIS reporting · Data accuracy · Cross-functional coordination
+                <strong>Finance &amp; Ops:</strong> Reconciliation · Stakeholder and MIS reporting · Data accuracy · Cross-functional coordination
               </div>
               <div>
                 <strong>Tools:</strong> Canva · Google Sheets / Excel · PowerPoint · SharePoint · AI-assisted drafting

@@ -64,7 +64,7 @@ export const ExperienceTimeline: React.FC = () => {
                     <div className="flex items-center gap-2 shrink-0 pt-1">
                       {isFloBites && (
                         <span className="hidden sm:inline-block px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white bg-[#FF4D42] border border-[#14151B] rounded-md shadow-xs">
-                          Current
+                          FMCG & Copy
                         </span>
                       )}
                       {isFinance && (

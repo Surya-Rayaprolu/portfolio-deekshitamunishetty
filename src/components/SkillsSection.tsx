@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { PORTFOLIO_DATA } from '../data/portfolioData';
 
 export const SkillsSection: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'copy' | 'marketing' | 'ops' | 'tools'>('copy');
+  const [activeTab, setActiveTab] = useState<'copy' | 'web' | 'marketing' | 'ops' | 'tools'>('copy');
 
   return (
     <section id="skills" className="py-16 md:py-24 border-b-2 border-[#14151B] bg-[#FAF9F6]">
@@ -16,7 +16,7 @@ export const SkillsSection: React.FC = () => {
             Skills, Tooling & Languages
           </h2>
           <p className="mt-3 text-base sm:text-lg text-[#14151B]/80 leading-relaxed">
-            A cross-functional toolbelt spanning consumer brand storytelling, market research, financial reconciliation, and multi-lingual fluency.
+            A cross-functional toolbelt spanning consumer brand copywriting, WordPress web design & live integrations, paid performance ads, market research, and financial rigor.
           </p>
         </div>
 
@@ -31,6 +31,16 @@ export const SkillsSection: React.FC = () => {
             }`}
           >
             Content & Copywriting
+          </button>
+          <button
+            onClick={() => setActiveTab('web')}
+            className={`px-4 py-2.5 rounded-xl border-2 text-xs sm:text-sm font-bold uppercase tracking-wider transition-all cursor-pointer ${
+              activeTab === 'web'
+                ? 'bg-[#7C3AED] text-white border-[#14151B] shadow-pop'
+                : 'bg-white text-[#14151B] border-[#14151B] hover:bg-slate-100 shadow-xs'
+            }`}
+          >
+            WordPress, Web Design & Ads
           </button>
           <button
             onClick={() => setActiveTab('marketing')}
@@ -85,6 +95,50 @@ export const SkillsSection: React.FC = () => {
                   >
                     <div className="flex items-center justify-between text-xs">
                       <span className="font-bold text-[#FF4D42]">{skill.level}</span>
+                      <span className="text-slate-400 font-mono">0{idx + 1}</span>
+                    </div>
+                    <h4 className="text-base font-bold text-[#14151B]">
+                      {skill.name}
+                    </h4>
+                    <p className="text-xs text-[#14151B]/80 leading-relaxed font-medium">
+                      {skill.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {activeTab === 'web' && (
+            <div className="space-y-6">
+              <div className="border-b-2 border-[#14151B]/15 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div>
+                  <h3 className="text-xl sm:text-2xl font-bold font-display text-[#14151B]">
+                    WordPress Web Design, Live Integrations & Paid Ads
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#14151B]/70">
+                    Hands-on CMS deployment, real-time widget embeds, and ongoing performance marketing coursework.
+                  </p>
+                </div>
+                <a
+                  href="https://nevara.top"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-[#7C3AED] text-white text-xs font-bold uppercase tracking-wider rounded-lg border-2 border-[#14151B] shadow-pop hover:bg-[#6D28D9] transition-colors whitespace-nowrap self-start sm:self-auto inline-flex items-center gap-1.5"
+                >
+                  <span>Visit nevara.top</span>
+                  <span>↗</span>
+                </a>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                {PORTFOLIO_DATA.skills.webDesign?.map((skill, idx) => (
+                  <div
+                    key={idx}
+                    className="p-5 rounded-xl border-2 border-[#14151B] bg-[#FFFDF9] shadow-xs hover:shadow-pop transition-all space-y-2"
+                  >
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="font-bold text-[#7C3AED]">{skill.level}</span>
                       <span className="text-slate-400 font-mono">0{idx + 1}</span>
                     </div>
                     <h4 className="text-base font-bold text-[#14151B]">

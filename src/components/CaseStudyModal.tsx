@@ -175,6 +175,17 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
             Want to see how this approach applies to your brand or upcoming campaign?
           </div>
           <div className="flex items-center gap-3 w-full sm:w-auto">
+            {study.liveUrl && (
+              <a
+                href={study.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 sm:flex-none px-4 py-2 text-xs font-bold uppercase tracking-wider text-white bg-[#7C3AED] hover:bg-[#6D28D9] border-2 border-[#14151B] rounded-lg shadow-pop cursor-pointer text-center inline-flex items-center justify-center gap-1.5"
+              >
+                <span>Visit nevara.top</span>
+                <span>↗</span>
+              </a>
+            )}
             <button
               onClick={onClose}
               className="flex-1 sm:flex-none px-4 py-2 text-xs font-semibold uppercase tracking-wider text-[#14151B] bg-slate-100 hover:bg-slate-200 border-2 border-[#14151B] rounded-lg cursor-pointer"

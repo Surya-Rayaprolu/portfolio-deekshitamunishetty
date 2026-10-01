@@ -6,7 +6,7 @@ interface CaseStudiesProps {
 }
 
 export const CaseStudies: React.FC<CaseStudiesProps> = ({ onSelectStudy }) => {
-  const [activeFilter, setActiveFilter] = useState<'all' | 'fmcg' | 'edtech' | 'cause' | 'finance'>('all');
+  const [activeFilter, setActiveFilter] = useState<'all' | 'fmcg' | 'edtech' | 'cause' | 'finance' | 'webdesign'>('all');
 
   const filteredStudies = PORTFOLIO_DATA.caseStudies.filter((study) => {
     if (activeFilter === 'all') return true;
@@ -26,7 +26,7 @@ export const CaseStudies: React.FC<CaseStudiesProps> = ({ onSelectStudy }) => {
               Where Creative Words Drive Real Numbers
             </h2>
             <p className="mt-2 text-base sm:text-lg text-[#14151B]/80 max-w-2xl">
-              Campaigns, website narratives, and operational milestones built with uncompromising discipline.
+              Campaigns, website narratives, live WordPress deployments, and operational milestones built with uncompromising discipline.
             </p>
           </div>
 
@@ -50,7 +50,17 @@ export const CaseStudies: React.FC<CaseStudiesProps> = ({ onSelectStudy }) => {
                   : 'text-[#14151B]/70 hover:text-[#14151B] hover:bg-slate-100'
               }`}
             >
-              Wellness FMCG
+              FloBites FMCG
+            </button>
+            <button
+              onClick={() => setActiveFilter('webdesign')}
+              className={`px-3.5 py-1.5 text-xs font-bold rounded-lg transition-colors cursor-pointer whitespace-nowrap ${
+                activeFilter === 'webdesign'
+                  ? 'bg-[#7C3AED] text-white'
+                  : 'text-[#14151B]/70 hover:text-[#14151B] hover:bg-slate-100'
+              }`}
+            >
+              WordPress (nevara.top)
             </button>
             <button
               onClick={() => setActiveFilter('edtech')}
@@ -177,7 +187,7 @@ export const CaseStudies: React.FC<CaseStudiesProps> = ({ onSelectStudy }) => {
                 </div>
 
                 {/* Bottom Actions */}
-                <div className="pt-4 border-t-2 border-[#14151B]/10 flex items-center justify-between gap-4">
+                <div className="pt-4 border-t-2 border-[#14151B]/10 flex flex-wrap items-center justify-between gap-3">
                   <div className="flex flex-wrap gap-1.5 text-xs text-[#14151B]/60">
                     {study.tags.slice(0, 3).map((tag, i) => (
                       <span key={i}>
@@ -186,12 +196,25 @@ export const CaseStudies: React.FC<CaseStudiesProps> = ({ onSelectStudy }) => {
                     ))}
                   </div>
 
-                  <button
-                    onClick={() => onSelectStudy(study)}
-                    className="px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#14151B] bg-white border-2 border-[#14151B] rounded-lg shadow-pop shadow-pop-hover cursor-pointer group-hover:bg-[#FFE838] transition-colors whitespace-nowrap shrink-0"
-                  >
-                    Deep Dive →
-                  </button>
+                  <div className="flex items-center gap-2">
+                    {study.liveUrl && (
+                      <a
+                        href={study.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3.5 py-2 text-xs font-bold uppercase tracking-wider text-white bg-[#7C3AED] hover:bg-[#6D28D9] border-2 border-[#14151B] rounded-lg shadow-pop cursor-pointer whitespace-nowrap inline-flex items-center gap-1.5"
+                      >
+                        <span>Visit Site</span>
+                        <span>↗</span>
+                      </a>
+                    )}
+                    <button
+                      onClick={() => onSelectStudy(study)}
+                      className="px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#14151B] bg-white border-2 border-[#14151B] rounded-lg shadow-pop shadow-pop-hover cursor-pointer group-hover:bg-[#FFE838] transition-colors whitespace-nowrap shrink-0"
+                    >
+                      Deep Dive →
+                    </button>
+                  </div>
                 </div>
               </div>
             );

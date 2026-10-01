@@ -35,7 +35,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenContact }) =
         </a>
 
         {/* Zone 2: 4-6 clean text navigation links */}
-        <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-[#14151B]/80">
+        <nav className="hidden md:flex items-center gap-5 text-sm font-medium text-[#14151B]/80">
+          <a
+            href="#flobites-work"
+            className="hover:text-[#FF4D42] hover:underline underline-offset-4 decoration-2 decoration-[#FF4D42] transition-colors whitespace-nowrap font-bold text-[#FF4D42]"
+          >
+            FloBites Vault
+          </a>
+          <a
+            href="#nevara-showcase"
+            className="hover:text-[#7C3AED] hover:underline underline-offset-4 decoration-2 decoration-[#7C3AED] transition-colors whitespace-nowrap font-bold text-[#7C3AED]"
+          >
+            Nevara
+          </a>
           <a
             href="#work"
             className="hover:text-[#FF4D42] hover:underline underline-offset-4 decoration-2 decoration-[#FF4D42] transition-colors whitespace-nowrap"
@@ -65,12 +77,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenContact }) =
             className="hover:text-[#FF4D42] hover:underline underline-offset-4 decoration-2 decoration-[#FF4D42] transition-colors whitespace-nowrap"
           >
             Experience
-          </a>
-          <a
-            href="#skills"
-            className="hover:text-[#FF4D42] hover:underline underline-offset-4 decoration-2 decoration-[#FF4D42] transition-colors whitespace-nowrap"
-          >
-            Skills
           </a>
         </nav>
 
@@ -114,6 +120,20 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenContact }) =
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
         <div className="md:hidden border-t-2 border-[#14151B] bg-[#FFFDF9] px-6 py-4 space-y-3">
+          <a
+            href="#flobites-work"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block py-2 text-sm font-bold text-[#FF4D42]"
+          >
+            ★ FloBites Campaign Vault
+          </a>
+          <a
+            href="#nevara-showcase"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block py-2 text-sm font-bold text-[#7C3AED]"
+          >
+            ★ Nevara (nevara.top)
+          </a>
           <a
             href="#work"
             onClick={() => setMobileMenuOpen(false)}

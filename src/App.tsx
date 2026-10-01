@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { CopyLab } from './components/CopyLab';
+import { FloBitesDossier } from './components/FloBitesDossier';
+import { NeveraShowcase } from './components/NeveraShowcase';
 import { CaseStudies } from './components/CaseStudies';
+import { CopyLab } from './components/CopyLab';
 import { RigorSection } from './components/RigorSection';
 import { BrandResearch } from './components/BrandResearch';
 import { ExperienceTimeline } from './components/ExperienceTimeline';
@@ -45,6 +47,12 @@ export default function App() {
           onOpenResume={() => setIsResumeOpen(true)}
           onSelectProject={handleSelectProjectId}
         />
+
+        {/* Real FloBites Creative & Commercial Deliverables Vault */}
+        <FloBitesDossier />
+
+        {/* nevara.top WordPress Architecture & Live Widgets Showcase */}
+        <NeveraShowcase />
 
         {/* Featured Case Studies (Bento Grid) */}
         <CaseStudies onSelectStudy={(study) => setSelectedStudy(study)} />
