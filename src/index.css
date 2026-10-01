@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Syne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #FFFDF9;
+    color: #14151B;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Poppy Vibrant Utility Accents */
+.bg-grid-dots {
+  background-image: radial-gradient(rgba(20, 21, 27, 0.08) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+.bg-grid-dots-poppy {
+  background-image: radial-gradient(rgba(255, 77, 66, 0.18) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+/* Tactile poppy shadow systems */
+.shadow-pop {
+  box-shadow: 4px 4px 0px #14151B;
+}
+
+.shadow-pop-lg {
+  box-shadow: 6px 6px 0px #14151B;
+}
+
+.shadow-pop-xl {
+  box-shadow: 8px 8px 0px #14151B;
+}
+
+.shadow-pop-coral {
+  box-shadow: 4px 4px 0px #FF4D42;
+}
+
+.shadow-pop-blue {
+  box-shadow: 4px 4px 0px #2D4BFF;
+}
+
+.shadow-pop-gold {
+  box-shadow: 4px 4px 0px #FFB800;
+}
+
+.shadow-pop-hover {
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shadow-pop-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #14151B;
+}
+
+.shadow-pop-hover:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #14151B;
+}
